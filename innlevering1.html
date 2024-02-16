@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        input, p {
+            display: inline-block; /* Display both input and p elements inline-block */
+            vertical-align: top; /* Align them at the top */
+            margin-right: 10px; /* Add some spacing between input and p elements */
+        }
+        p{
+            color:red;
+        }
+        #antall {
+            width: 20px; /* Adjust the width as per your requirement */
+        }
+    </style>
+</head>
+<body>
+
+<label for="film">Velg film her:</label> <!-- beskrivelse for selevt option  -->
+<select name="film" id="film">
+    <option value="godzilla">Godzilla KingKong</option>
+    <option value="panda">kungfu panda</option>
+    <option value="lotr">Lord of The Rings </option>
+    <option value="ds">Demon Slayer: Hashira Training</option>
+</select>
+
+<form><!-- form for alle inputboksene  -->
+    Antall <input name="antall" type="text" id="antall"><p id="p1"></p><br>
+    Fornavn <input name="fornavn" type="text" id="fornavn"><p id="p2"></p><br>
+    Etternavn <input name="etternavn" type="text" id="enavn"><p id="p3"></p><br>
+    Telefonnr <input name="telefonnummer" type="text" id="tlfnr"><p id="p4"></p><br>
+    Epost <input name="epost" type="text" id="epost"><p id="p5"></p><br>
+</form>
+<h2>Alle billetter</h2>
+<button onclick="kjopBillett()">Kjøp Billett</button> <!-- knapp for å bestille billetter til divboks  -->
+
+<button onclick="slettBillett()">Slett alle billetter</button><!--  knapp for å slette alt i divboks  -->
+<div id="filmValg"></div> <!--  Her skrives det billettene-->
+<script src="script.js">
+
+</script>
+</body>
+</html>
